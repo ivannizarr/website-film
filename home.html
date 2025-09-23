@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CHILL - Beranda</title>
+  <link rel="icon" type="image/png" href="assets/img/movie-open.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/home.css"/>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">
+        <img src="assets/img/Logo.png" alt="CHILL"/>
+      </a>
+      <nav class="nav">
+        <a href="#">Series</a>
+        <a href="#" class="active">Film</a>
+        <a href="#">Daftar Saya</a>
+      </nav>
+
+      <div class="profile">
+        <img class="avatar" src="assets/img/avatar.png" alt="Akun"/>
+        <span class="fas fa-chevron-down"></span>
+        <div class="profile-dropdown" id="profileDropdown">
+          <div class="dropdown-item">
+            <i class="fas fa-user"></i>
+            <span>Profil Saya</span>
+          </div>
+          <div class="dropdown-item">
+            <i class="fas fa-crown"></i>
+            <span>Ubah Premium</span>
+          </div>
+          <div class="dropdown-item">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Keluar</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <h2 class="hero-title">Duty After School</h2>
+      <p class="hero-desc">
+        Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan,
+        Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa
+        sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.
+      </p>
+
+      <div class="hero-actions">
+        <div class="left-group">
+          <a class="btn primary" href="#">Mulai</a>
+          <a class="btn ghost" href="#">
+            <img src="assets/img/information-outline.png" alt="Info">
+            Selengkapnya
+          </a>
+          <span class="age-badge">18+</span>
+        </div>
+        <button class="volume-btn" aria-label="Senyapkan">
+          <img src="assets/img/Frame 65.png" alt="Mute">
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <main class="main">
+
+    <!-- Row 1: Continue Watching (wide) -->
+    <section class="section">
+      <h3 class="section-title">Melanjutkan Tonton Film</h3>
+      <div class="carousel">
+        <button class="carousel-arrow left" data-target="cw1" data-dir="-1" aria-label="Scroll kiri">
+          <img src="assets/img/arrow-left.png" alt="Previous">
+        </button>
+        <div class="row-scroll row-wide" id="cw1">
+          <!-- Card Wide -->
+          <article class="card card-wide">
+            <img src="assets/img/row1.png" alt="Don't Look Up"/>
+            <div class="card-overlay">
+              <div class="meta">
+                <span class="title">Don't Look Up</span>
+                <span class="rating">★ 4.5/5</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-wide">
+            <img src="assets/img/row2.png" alt="All of Us Are Dead"/>
+            <div class="card-overlay">
+              <div class="meta">
+                <span class="title">All of Us Are Dead</span>
+                <span class="rating">★ 4.2/5</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-wide">
+            <span class="badge">Episode Baru</span>
+            <img src="assets/img/row3.png" alt="Blue Lock"/>
+            <div class="card-overlay">
+              <div class="meta">
+                <span class="title">Blue Lock</span>
+                <span class="rating">★ 4.6/5</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-wide">
+            <img src="assets/img/row4.png" alt="A Man Called Otto"/>
+            <div class="card-overlay">
+              <div class="meta">
+                <span class="title">A Man Called Otto</span>
+                <span class="rating">★ 4.7/5</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <button class="carousel-arrow right" data-target="cw1" data-dir="1" aria-label="Scroll kanan">
+          <img src="assets/img/arrow-right.png" alt="Next">
+        </button>
+      </div>
+    </section>
+
+    <!-- Row 2: Top Rating (tall posters) -->
+    <section class="section">
+      <h3 class="section-title">Top Rating Film dan Series Hari ini</h3>
+      <div class="carousel">
+        <button class="carousel-arrow left" data-target="top1" data-dir="-1" aria-label="Scroll kiri">
+          <img src="assets/img/arrow-left.png" alt="Previous">
+        </button>
+        <div class="row-scroll row-tall" id="top1">
+          <article class="card card-tall">
+            <span class="badge">Episode Baru</span>
+            <img src="assets/img/14.png" alt="Suzume"/>
+            <div class="card-info">
+              <div class="info-title">Suzume</div>
+              <div class="info-meta">
+                <span class="info-year">2022</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.8</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-tall">
+            <img src="assets/img/25.png" alt="Jurassic World"/>
+            <div class="card-info">
+              <div class="info-title">Jurassic World</div>
+              <div class="info-meta">
+                <span class="info-year">2022</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.3</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-tall">
+            <img src="assets/img/29.png" alt="Sonic 2"/>
+            <div class="card-info">
+              <div class="info-title">Sonic 2</div>
+              <div class="info-meta">
+                <span class="info-year">2022</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.5</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-tall">
+            <span class="badge">Episode Baru</span>
+            <img src="assets/img/9.png" alt="All of Us Are Dead"/>
+            <div class="card-info">
+              <div class="info-title">All of Us Are Dead</div>
+              <div class="info-meta">
+                <span class="info-year">2022</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.2</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-tall">
+            <span class="badge top">
+              <span>Top</span>
+              <span>10</span>
+            </span>
+            <img src="assets/img/12.png" alt="Big Hero 6"/>
+            <div class="card-info">
+              <div class="info-title">Big Hero 6</div>
+              <div class="info-meta">
+                <span class="info-year">2014</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.6</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <button class="carousel-arrow right" data-target="top1" data-dir="1" aria-label="Scroll kanan">
+          <img src="assets/img/arrow-right.png" alt="Next">
+        </button>
+      </div>
+    </section>
+
+    <!-- Row 3: Trending -->
+    <section class="section">
+      <h3 class="section-title">Film Trending</h3>
+      <div class="carousel">
+        <button class="carousel-arrow left" data-target="trend1" data-dir="-1" aria-label="Scroll kiri">
+          <img src="assets/img/arrow-left.png" alt="Previous">
+        </button>
+        <div class="row-scroll row-tall" id="trend1">
+          <article class="card card-tall">
+            <img src="assets/img/1.png" alt="Tomorrow War"/>
+            <div class="card-info">
+              <div class="info-title">Tomorrow War</div>
+              <div class="info-meta">
+                <span class="info-year">2021</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.1</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card card-tall">
+            <span class="badge top">
+              <span>Top</span>
+              <span>10</span>
+            </span>
+            <img src="assets/img/16.png" alt="Quantumania"/>
+            <div class="card-info">
+              <div class="info-title">Quantumania</div>
+              <div class="info-meta">
+                <span class="info-year">2023</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.4</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card card-tall">
+            <span class="badge top">
+              <span>Top</span>
+              <span>10</span>
+            </span>
+            <img src="assets/img/30.png" alt="Guardians of the Galaxy"/>
+            <div class="card-info">
+              <div class="info-title">Guardians of the Galaxy</div>
+              <div class="info-meta">
+                <span class="info-year">2023</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.7</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card card-tall">
+            <img src="assets/img/10.png" alt="A Man Called Otto"/>
+            <div class="card-info">
+              <div class="info-title">A Man Called Otto</div>
+              <div class="info-meta">
+                <span class="info-year">2022</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.7</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card card-tall">
+            <img src="assets/img/2.png" alt="Little Mermaid"/>
+            <div class="card-info">
+              <div class="info-title">Little Mermaid</div>
+              <div class="info-meta">
+                <span class="info-year">2023</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.2</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <button class="carousel-arrow right" data-target="trend1" data-dir="1" aria-label="Scroll kanan">
+          <img src="assets/img/arrow-right.png" alt="Next">
+        </button>
+      </div>
+    </section>
+
+    <!-- Row 4: New Releases -->
+    <section class="section">
+      <h3 class="section-title">Rilis Baru</h3>
+      <div class="carousel">
+        <button class="carousel-arrow left" data-target="new1" data-dir="-1" aria-label="Scroll kiri">
+          <img src="assets/img/arrow-left.png" alt="Previous">
+        </button>
+        <div class="row-scroll row-tall" id="new1">
+          <article class="card card-tall">
+            <span class="badge top">
+              <span>Top</span>
+              <span>10</span>
+            </span>
+            <img src="assets/img/2.png" alt="Little Mermaid"/>
+            <div class="card-info">
+              <div class="info-title">Little Mermaid</div>
+              <div class="info-meta">
+                <span class="info-year">2023</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.2</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card card-tall">
+            <span class="badge">Episode Baru</span>
+            <img src="assets/img/17.png" alt="Duty After School"/>
+            <div class="card-info">
+              <div class="info-title">Duty After School</div>
+              <div class="info-meta">
+                <span class="info-year">2023</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.5</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card card-tall">
+            <img src="assets/img/12.png" alt="Big Hero 6"/>
+            <div class="card-info">
+              <div class="info-title">Big Hero 6</div>
+              <div class="info-meta">
+                <span class="info-year">2014</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.6</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card card-tall">
+            <span class="badge">Episode Baru</span>
+            <img src="assets/img/9.png" alt="All of Us Are Dead"/>
+            <div class="card-info">
+              <div class="info-title">All of Us Are Dead</div>
+              <div class="info-meta">
+                <span class="info-year">2022</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.2</span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card card-tall">
+            <img src="assets/img/13.png" alt="Missing"/>
+            <div class="card-info">
+              <div class="info-title">Missing</div>
+              <div class="info-meta">
+                <span class="info-year">2023</span>
+                <div class="info-rating">
+                  <span class="star">★</span>
+                  <span>4.3</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <button class="carousel-arrow right" data-target="new1" data-dir="1" aria-label="Scroll kanan">
+          <img src="assets/img/arrow-right.png" alt="Next">
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+  <div class="container footer-wrap">
+    <!-- Kiri: Brand -->
+    <div class="brand-col">
+      <img src="assets/img/Logo.png" alt="CHILL" class="footer-logo">
+      <p class="copyright">@2023 Chill All Rights Reserved.</p>
+    </div>
+
+    <!-- Tengah: Genre (4 kolom) -->
+    <div class="genre-col">
+      <h4>Genre</h4>
+      <ul class="genre-grid">
+        <li><a href="#">Aksi</a></li>
+        <li><a href="#">Anak-anak</a></li>
+        <li><a href="#">Anime</a></li>
+        <li><a href="#">Britania</a></li>
+
+        <li><a href="#">Drama</a></li>
+        <li><a href="#">Fantasi Ilmiah & Fantasi</a></li>
+        <li><a href="#">Kejahatan</a></li>
+        <li><a href="#">KDrama</a></li>
+
+        <li><a href="#">Komedi</a></li>
+        <li><a href="#">Petualangan</a></li>
+        <li><a href="#">Perang</a></li>
+        <li><a href="#">Romantis</a></li>
+
+        <li><a href="#">Sains & Alam</a></li>
+        <li><a href="#">Thriller</a></li>
+      </ul>
+    </div>
+
+    <!-- Kanan: Bantuan -->
+    <div class="help-col">
+      <h4>Bantuan</h4>
+      <ul class="help-list">
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Kontak Kami</a></li>
+        <li><a href="#">Privasi</a></li>
+        <li><a href="#">Syarat & Ketentuan</a></li>
+      </ul>
+    </div>
+    </div>
+    </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
